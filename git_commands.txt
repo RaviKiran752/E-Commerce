@@ -1,0 +1,12 @@
+git init
+ls -a
+clear
+git status
+git add testing.py 
+git status
+git commit -m "added the first commit"
+git status 
+rm testing.py 
+ls
+git restore testing.py 
+git status
