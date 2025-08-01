@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
+  <diagram name="Page-1" id="epIgkeg7Bv7ok52b9p6g">
+    <mxGraphModel dx="786" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-1" value="Ionic + Angular&#xa; Frontend" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-2" value="API Gateway&#xa;(NGINX)" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="150" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-3" value="Chat API&#xa;(Node.js)" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="200" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-4" value="Auth + Rate Limiter" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-5" value="Orchestration &amp; Intent Router&#xa;(Rule-based + LLM fallback)" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-6" value="Search Tool" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="150" y="470" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-7" value="Order Tool" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="470" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-8" value="Track Tool" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="450" y="470" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-9" value="Vector DB&#xa;(FAISS/Qdrant)" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="560" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-10" value="GPT-4 API" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="550" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-11" value="Redis&#xa;(Session &amp; Caching)" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="100" y="650" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-12" value="Logging + Monitoring&#xa;(ELK/Loki + Grafana)" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="400" y="650" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-13" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-1" target="TKPkH0Gu5LYMxNkVl-Dv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-14" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-2" target="TKPkH0Gu5LYMxNkVl-Dv-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-15" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-2" target="TKPkH0Gu5LYMxNkVl-Dv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-16" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-3" target="TKPkH0Gu5LYMxNkVl-Dv-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-17" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-5" target="TKPkH0Gu5LYMxNkVl-Dv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-18" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-5" target="TKPkH0Gu5LYMxNkVl-Dv-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-19" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-5" target="TKPkH0Gu5LYMxNkVl-Dv-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-20" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-6" target="TKPkH0Gu5LYMxNkVl-Dv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-21" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-7" target="TKPkH0Gu5LYMxNkVl-Dv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-22" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-8" target="TKPkH0Gu5LYMxNkVl-Dv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-23" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-5" target="TKPkH0Gu5LYMxNkVl-Dv-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-24" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-2" target="TKPkH0Gu5LYMxNkVl-Dv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TKPkH0Gu5LYMxNkVl-Dv-25" style="endArrow=block;" edge="1" parent="1" source="TKPkH0Gu5LYMxNkVl-Dv-2" target="TKPkH0Gu5LYMxNkVl-Dv-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
