@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.0.7">
+  <diagram name="WhatsApp Bot Flow" id="_vxwBUpCyC1v7SUPO7TA">
+    <mxGraphModel dx="1130" dy="404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-1" value="User sends message on WhatsApp" style="shape=ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-2" value="Webhook (Backend) receives message" style="shape=rectangle;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-3" value="Session Handling (Identify User Context)" style="shape=rectangle;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-4" value="Intent Recognition &amp; Processing" style="shape=rectangle;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-5" value="Prepare Response (Text/Template)" style="shape=rectangle;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-6" value="Send Response via WhatsApp Cloud API" style="shape=rectangle;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="580" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-7" value="Message Delivered to User" style="shape=ellipse;fillColor=#cce5ff;strokeColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="80" y="680" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-8" edge="1" parent="1" source="yZJP4aqbkcDXBqnkwpPu-1" target="yZJP4aqbkcDXBqnkwpPu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-9" edge="1" parent="1" source="yZJP4aqbkcDXBqnkwpPu-2" target="yZJP4aqbkcDXBqnkwpPu-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-10" edge="1" parent="1" source="yZJP4aqbkcDXBqnkwpPu-3" target="yZJP4aqbkcDXBqnkwpPu-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-11" edge="1" parent="1" source="yZJP4aqbkcDXBqnkwpPu-4" target="yZJP4aqbkcDXBqnkwpPu-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-12" edge="1" parent="1" source="yZJP4aqbkcDXBqnkwpPu-5" target="yZJP4aqbkcDXBqnkwpPu-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yZJP4aqbkcDXBqnkwpPu-13" edge="1" parent="1" source="yZJP4aqbkcDXBqnkwpPu-6" target="yZJP4aqbkcDXBqnkwpPu-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
